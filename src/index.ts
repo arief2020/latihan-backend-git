@@ -19,6 +19,21 @@ app.post('/login', (req: Request, res: Response) => {
     res.send('User logged in');
 });
 
+// Endpoint add product
+app.post("/products", (req: Request, res: Response) => {
+  const { name, price } = req.body;
+  // Logic to add product
+  res.send("Product added");
+});
+
+// Endpoint to get all products
+app.get("/products", (req: Request, res: Response) => {
+  // logic to get all products
+  res.send("List of products");
+});
+
+
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

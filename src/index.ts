@@ -32,6 +32,20 @@ app.get("/products", (req: Request, res: Response) => {
   res.send("List of products");
 });
 
+// Endpoint to create order
+app.post("/orders", (req: Request, res: Response) => {
+  const { productId, quantity } = req.body;
+  // Logic to create order
+  res.send("Order created");
+});
+
+// Endpoint to get all orders
+app.get("/orders", (req: Request, res: Response) => {
+  // Logic to get all orders
+  res.send("List of orders");
+});
+
+
 
 
 app.listen(port, () => {

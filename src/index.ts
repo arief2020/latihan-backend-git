@@ -16,7 +16,7 @@ app.post('/register', (req: Request, res: Response) => {
 app.post('/login', (req: Request, res: Response) => {
     const { username, password } = req.body;
     // Logic user login
-    res.send('User logged in');
+    res.send('User successfully logged in');
 });
 
 // Endpoint add product
